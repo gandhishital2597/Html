@@ -1,0 +1,502 @@
+Question 1: Define HTML. What is the purpose of HTML in web development?
+-->
+HTML (HyperText Markup Language) is the standard markup language used to create and structure content on the web. It uses tags to define elements such as headings, paragraphs, images, links, tables, and forms.
+Purpose of HTML in web development:
+
+Provides the structure of a webpage (like the skeleton of a body).
+Organizes content into logical sections.
+Allows linking between pages using hyperlinks.
+Works with CSS (for styling) and JavaScript (for functionality) to build complete web applications.
+Ensures browsers can correctly display text, media, and layout elements.
+
+Question 2: Explain the basic structure of an HTML document. Identify the mandatory tags and their purposes.
+-->
+A basic HTML document structure:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>This is my first webpage.</p>
+</body>
+</html>
+
+<!DOCTYPE html> : Declares the document type. Tells the browser that the document uses HTML5.
+<html> : Root element that contains the entire webpage.
+<head> : Contains metadata (information about the page), such as title, character set, CSS links, etc.
+<title> : Defines the title shown in the browser tab.
+<body> : Contains all visible content such as text, images, buttons, links, etc.
+
+Question 3: What is the difference between block-level elements and inline elements in HTML? Provide examples of each.
+-->
+Block-level elements :
+Always start on a new line.
+Take the full width available.
+Can contain both block and inline elements.
+
+Examples:
+<div>
+<p>
+<h1> to <h6>
+<section>
+<article>
+
+Inline elements :
+Do not start on a new line.
+Take only the necessary width.
+Usually used inside block elements.
+
+Examples:
+<span>
+<a>
+<strong>
+<em>
+<img>
+
+Question 4: Discuss the role of semantic HTML. Why is it important for accessibility and SEO? Provide examples of semantic elements.
+-->
+Semantic HTML uses tags that clearly describe the meaning of the content rather than just its appearance.
+
+Role of Semantic HTML :
+Makes webpage structure more meaningful and organized.
+Helps browsers and developers understand the content easily.
+Improves maintainability of code.
+
+Importance for Accessibility :
+Screen readers can better interpret the page structure for visually impaired users.
+Provides logical navigation using meaningful sections.
+
+Importance for SEO (Search Engine Optimization) :
+Search engines understand content better.
+Improves ranking because page structure is clearer.
+
+Examples of semantic elements:
+<header> – Defines the top section of a page.
+<nav> – Defines navigation links.
+<section> – Defines a section of content.
+<article> – Defines independent content.
+<aside> – Defines sidebar content.
+<footer> – Defines the bottom section of a page.
+
+--------------------------------------------------------------------------------
+
+Question 1: What are HTML forms used for? Describe the purpose of the input, textarea, select, and button elements.
+-->
+HTML forms are used to collect user data and send it to a server for processing. Forms are commonly used for login pages, registration forms, feedback forms, search boxes, and online orders.
+Main form elements:
+<input> : Used to take single-line input from users.
+          It supports many types such as text, password, email, number, radio, checkbox, file, etc.
+          Example: username, password, phone number.
+<textarea> : Used for multi-line text input.
+             Example: comments, feedback, address.
+<select> : Creates a dropdown list of options.
+           Used when users must choose one (or sometimes multiple) options from a predefined list.
+           Options are defined using the <option> tag.
+<button> : Used to perform an action, most commonly to submit or reset a form.
+
+Types :
+submit – sends form data to the server.
+reset – clears all fields.
+button – used for custom actions with JavaScript.
+
+Question 2: Explain the difference between the GET and POST methods in form submission. When should each be used?
+-->
+GET Method : Sends form data through the URL.
+             Data is visible in the address bar.
+             Has limited data size.
+             Can be bookmarked.
+             Less secure.
+Used when : Requesting or retrieving data (e.g., search forms). Data is not sensitive.
+
+POST Method : Sends form data inside the HTTP request body.
+              Data is not visible in the URL.
+              Can send large amounts of data.
+              More secure than GET (though still needs HTTPS for real security).
+
+Used when: Sending sensitive data (passwords, personal details). Submitting large or complex data. Creating or updating records in a database.
+
+Question 3: What is the purpose of the label element in a form, and how does it improve accessibility?
+-->
+The <label> element defines a text description for a form input field.
+
+Purpose:
+Clearly tells the user what information to enter in a field.
+Improves form usability.
+
+Screen readers read the label along with the input field, helping visually impaired users understand the form.
+Clicking on the label automatically focuses or selects the associated input field.
+Makes forms easier to navigate and more user-friendly.
+
+--------------------------------------------------------------------------------
+
+Question 1: Explain the structure of an HTML table and the purpose of each of the following elements: <table>, <tr>, <th>, <td>, and <thead>.
+-->
+An HTML table is used to display data in a rows and columns format.
+Main table elements:
+
+<table> : The main container for the entire table.
+All table elements are placed inside it.
+
+<tr> (Table Row) :
+Defines a row in the table.
+Each row can contain multiple cells.
+
+<th> (Table Header Cell) :
+Defines a header cell.
+Text inside <th> is bold and center-aligned by default.
+Used for column or row headings.
+
+<td> (Table Data Cell) :
+Defines a normal data cell.
+Contains actual table data.
+
+<thead> :
+Groups the header section of the table.
+Helps structure the table and improves readability and styling.
+
+Question 2: What is the difference between colspan and rowspan in tables? Provide examples.
+-->
+Both attributes are used to merge table cells.
+
+colspan :
+Merges columns (horizontal merging).
+A cell spans across multiple columns.
+
+rowspan :
+Merges rows (vertical merging).
+A cell spans across multiple rows.
+
+Question 3: Why should tables be used sparingly for layout purposes? What is a better alternative?
+-->
+Tables were previously used to design webpage layouts, but this approach is now discouraged.
+
+Problems with using tables for layout:
+Makes code complex and hard to maintain.
+Not responsive for different screen sizes.
+Poor accessibility for screen readers.
+Slower rendering compared to modern layout methods.
+
+Better alternatives:
+CSS Flexbox – for one-dimensional layouts (row or column).
+CSS Grid – for two-dimensional layouts (rows and columns).
+
+These modern layout techniques are:
+More flexible
+Responsive
+Cleaner and easier to manage
+
+--------------------------------------------------------------------------------
+
+Question 1: What is a CSS selector? Provide examples of element, class, and ID selectors.
+-->
+A CSS selector is used to select HTML elements so that styles can be applied to them.
+
+Types of CSS selectors:
+
+1. Element Selector :
+Targets all elements of a specific HTML tag.
+ example  : p {
+  color: blue;
+}
+
+2. Class Selector :
+Targets elements with a specific class attribute.
+A class selector starts with a dot (.).
+example : .highlight {
+  background-color: yellow;
+}
+<p class="highlight">Hello</p>
+
+3. ID Selector :
+Targets a single element with a specific id attribute.
+An ID selector starts with a hash (#).
+example : #header {
+  background-color: black;
+  color: white;
+}
+<div id="header">Welcome</div>
+
+4. Universal selector :
+ the universal selector (*) is used to select all elements on a web page, regardless of their type, class, or ID.
+example : *{
+margin: 0px ;
+padding : 0px;
+}
+
+Question 2: Explain the concept of CSS specificity. How do conflicts between multiple styles get resolved?
+-->
+CSS specificity determines which style rule is applied when multiple rules target the same element.
+
+CSS follows a priority order:
+Inline CSS (highest priority)
+ID selectors
+Class selectors / attributes / pseudo-classes
+Element selectors (lowest priority)
+
+If specificity is the same:
+The last declared rule is applied.
+
+Special rule:
+!important overrides all normal specificity rules (but should be avoided unless necessary).
+
+Question 3: What is the difference between internal, external, and inline CSS? Discuss the advantages and disadvantages of each approach.
+-->
+1. Inline CSS :
+CSS is applied directly inside the HTML element using the style attribute
+
+Advantages: Quick for small changes. Highest specificity.
+
+Disadvantages: Not reusable. Makes code messy. Hard to maintain.
+
+2. Internal CSS :
+CSS is written inside the <style> tag within the <head> section.
+
+Advantages: Useful for styling a single webpage. No separate file required.
+
+Disadvantages: Not reusable across multiple pages. Increases page size.
+
+3. External CSS :
+CSS is written in a separate .css file and linked to HTML.
+
+Advantages: Reusable across multiple pages. Cleaner and more maintainable code. Best practice for large projects.
+
+Disadvantages: Requires an additional file. Styles may not load if the file path is incorrect.
+
+--------------------------------------------------------------------------------
+
+Question 1: Explain the CSS box model and its components (content, padding, border, margin). How does each affect the size of an element?
+-->
+The CSS Box Model describes the layout and spacing of elements on a webpage. Every HTML element is treated as a rectangular box consisting of four main parts.
+
+Components of the CSS Box Model:
+
+Content :
+
+The innermost part where text, images, or other content appear.
+The width and height properties apply to this area (by default).
+
+Padding :
+
+Space between the content and the border.\
+Increases the inner spacing of the element.
+Padding adds to the total size of the element.
+
+Border :
+
+Surrounds the padding and content.
+Its thickness also increases the total size.
+
+Margin :
+
+Space outside the border.
+Creates distance between elements.
+Margin does not affect the internal size but affects spacing around the element.
+
+Size Calculation ( Default behaviour ) :
+Total width = content width + padding + border + margin  
+Total height = content height + padding + border + margin
+
+Question 2: What is the difference between border-box and content-box box-sizing in CSS? Which is the default?
+-->
+The box-sizing property controls how the total width and height of an element are calculated.
+
+1. content-box (Default) :
+
+Width and height apply only to the content area.
+Padding and border are added outside, increasing the total size.
+
+2. border-box :
+
+Width and height include content + padding + border.
+Total size remains fixed.
+
+border-box is commonly used because:
+
+Layout becomes easier to control.
+Prevents unexpected size increases.
+Makes responsive design simpler.
+
+--------------------------------------------------------------------------------
+
+Question 1: What is CSS Flexbox, and how is it useful for layout design? Explain the terms flex-container and flex-item.
+-->
+CSS Flexbox (Flexible Box Layout) is a layout system used to arrange elements in a row or column with flexible spacing and alignment. It helps design responsive layouts without using floats or complex positioning.
+
+Why Flexbox is useful:
+
+Easily aligns items horizontally and vertically.
+Automatically adjusts layout for different screen sizes.
+Reduces complex layout code.
+Controls spacing and order of elements efficiently.
+
+Flex Container :
+The parent element where Flexbox is applied using:
+It controls the layout of its child elements.
+
+Flex Items :
+The child elements inside the flex container.
+They automatically follow Flexbox rules for alignment and spacing.
+
+Question 2: Describe the properties justify-content, align-items, and flex-direction used in Flexbox.
+-->
+1. flex-direction
+Defines the direction of flex items inside the container.
+
+Values:
+row (default) – items arranged left to right
+row-reverse – right to left
+column – top to bottom
+column-reverse – bottom to top
+
+2. justify-content
+Aligns items along the main axis (horizontal by default). aligns items horizontally (main axis)
+
+Common values:
+flex-start – items at the start
+flex-end – items at the end
+center – items at the center
+space-between – equal space between items
+space-around – equal space around items
+space-evenly – equal spacing everywhere
+
+3. align-items
+Aligns items along the cross axis (vertical by default). aligns items vertically (cross axis)
+
+Common values:
+stretch (default) – items stretch to fill container
+flex-start – top alignment
+flex-end – bottom alignment
+center – vertical center
+baseline – aligned by text baseline
+
+--------------------------------------------------------------------------------
+
+Question 1: Explain CSS Grid and how it differs from Flexbox. When would you use Grid over Flexbox?
+-->
+CSS Grid is a two-dimensional layout system used to design web layouts using rows and columns. It allows developers to place elements precisely in both directions (horizontal and vertical).
+
+Key features of CSS Grid:
+Works in two dimensions (rows and columns).
+Provides strong control over layout structure.
+Useful for complex page layouts.
+
+Use CSS Grid when:
+You need both rows and columns.
+Designing full webpage layouts.
+Creating complex grid-based designs (like dashboards or product grids).
+
+Use Flexbox when:
+Aligning items in one direction (navigation bars, buttons, cards in a row).
+
+Flexbox                              | Grid                               
+One-dimensional (row *or* column)    | Two-dimensional (row *and* column) 
+Aligning items in a single direction | Full-page or complex layouts       
+Focus on content alignment           | Focus on layout structure        
+
+Question 2: Describe the grid-template-columns, grid-template-rows, and grid-gap properties. Provide examples of how to use them.
+-->
+These properties are used to define the structure and spacing of a grid layout.
+
+1. grid-template-columns :
+Defines the number and width of columns.
+example : 
+.container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+} 
+This creates 3 columns, each 200px wide.
+grid-template-columns: 1fr 1fr 1fr;
+
+2. grid-template-rows :
+Defines the number and height of rows.
+example : 
+.container {
+  display: grid;
+  grid-template-rows: 100px 150px;
+}
+Creates two rows with different heights.
+
+3. grid-gap (now commonly written as gap)
+Adds spacing between rows and columns.
+Example:
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+--------------------------------------------------------------------------------
+
+Question 1: What are media queries in CSS, and why are they important for responsive design?
+-->
+Media queries are a CSS feature used to apply styles based on device characteristics such as screen size, width, height, resolution, or orientation.
+They are mainly used to create responsive web designs, meaning a website automatically adjusts its layout and styling for different devices like mobiles, tablets, and desktops.
+
+Why media queries are important:
+
+Make websites mobile-friendly.
+Improve user experience across different screen sizes.
+Allow different layouts for different devices.
+Help avoid horizontal scrolling or broken layouts on small screens.
+
+Example idea:
+Large screens → multi-column layout
+Small screens → single-column layout
+
+Question 2: Write a basic media query that adjusts the font size of a webpage for screens smaller than 600px.
+-->
+body {
+  font-size: 18px;   
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media defines the media query.
+(max-width: 600px) means the styles inside will apply when the screen width is 600px or less.
+
+--------------------------------------------------------------------------------
+
+Question 1: Explain the difference between web-safe fonts and custom web fonts. Why might you use a web-safe font over a custom font?
+-->
+Web-safe fonts :
+Web-safe fonts are fonts that are pre-installed on most operating systems and browsers, so they display consistently without needing to be downloaded.
+
+Examples: Arial , Verdana , Times New Roman
+
+Advantages: Load faster (no external download required). Consistent display across devices. Simple to use.
+
+Custom web fonts :
+Custom web fonts are fonts that are not pre-installed on users’ systems and must be loaded from external sources or font files.
+These fonts are usually imported using services like Google Fonts.
+
+Advantages: More design flexibility. Unique and modern typography. Better branding possibilities.
+
+Disadvantages: Slightly slower loading time. Requires internet access to load the font.
+
+You may prefer web-safe fonts when:
+Website speed is important.
+You want guaranteed compatibility across devices.
+The design does not require special typography.
+
+Question 2: What is the font-family property in CSS? How do you apply a custom Google Font to a webpage?
+-->
+The font-family property in CSS specifies the typeface used for text in an element.
+
+Steps to apply a custom Google Font: 
+
+Step 1: Choose a font
+Go to the Google Fonts website and select a font.
+
+Step 2: Copy the link provided
+Place this inside the <head> section.
+
+Step 3: Use the font in CSS
+Now the webpage will use the custom font.
+
+--------------------------------------------------------------------------------

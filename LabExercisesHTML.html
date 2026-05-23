@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 : Lab Exercises</title>
+
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+        table {
+        margin: auto;    
+        width: 90%;
+        border-collapse: collapse;
+        table-layout: fixed;   /* This forces equal column sizing */
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align:center;
+        width: 18%;   /* 5 columns → 90/5 = 18% each */
+        word-wrap: break-word;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;  /* keeps image proportional */
+    }
+    </style>
+
+</head>
+<body>
+    <h3>Structure : </h3>
+    <header>---Header Section---</header>
+    <main>---main section---
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum, esse excepturi doloribus earum necessitatibus odit quod nulla tempora hic suscipit. Placeat officiis ratione deserunt recusandae, dignissimos quod perspiciatis nostrum.</p>
+            <a href="">Click for more Info...</a>
+        </section> 
+        <aside>
+            <ul>
+                <li>Lorem.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+            <ol>
+                <li>Lorem.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ol>
+        </aside>
+    </main>
+    <footer>---footer---Author Details</footer>
+    <hr>
+
+    <h3>Form :</h3>
+    <form action="">
+
+        <label for="name">Full Name : </label>
+        <input type="text" name="" id="name" minlength="5" maxlength="10" required><br><br>
+        <label for="email">Email : </label>
+        <input type="email" name="" id="email" required><br><br>
+        <label for="number">Phone Number : </label>
+        <input type="number" name="" id="number" required pattern="[0-9]{10}"><br><br>
+        <label for="subject">Subject : </label>
+        <select name="" id="subject">
+            <option value="">Select Subject</option>
+            <option value="">Math</option>
+            <option value="">English</option>
+            <option value="">Economics</option>
+            <option value="">Science</option>
+        </select><br><br>
+        <label for="message">Message : </label>
+        <textarea name="" id="message" cols="30" rows="2"></textarea><br><br>
+        <button type="submit">Submit</button><br><br>
+
+    </form>
+    <hr>
+
+    <h3>Table :</h3>
+    <table>
+        <tr>
+            <th colspan="5">Table</th>
+        </tr>
+        <tr>
+            <th>Product Name</th>
+            <th>Product Image</th>
+            <th>Price</th>
+            <th>Product Description</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td>Boat Headphone</td>
+            <td><img src="../Assets/img1.webp" alt="Boat Headphone"></td>
+            <td>$11.00</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aperiam doloremque, enim rem doloribus pariatur eveniet expedita, quam dicta voluptas eos sed iusto sunt quidem.</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <td>Noise Earbuds </td>
+            <td><img src="../Assets/img2.jpg" alt="EarBuds"></td>
+            <td>$10.23</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laborum animi incidunt esse blanditiis id ad, repudiandae, aspernatur, veniam pariatur modi nisi officiis mollitia debitis?</td>
+            <td>Out of Stock</td>
+        </tr>  
+    </table>
+    <hr>
+    
+
+</body>
+
+</html>

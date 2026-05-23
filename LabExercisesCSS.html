@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 : Lab Exercises</title>
+
+    <link rel="stylesheet" href="LabExercisesCSS.css">
+
+</head>
+<body>
+
+    <div class="box1">
+
+    <h3>CSS Selectors & Styling : </h3>
+    <pre>Task: Style the contact form (created in the HTML Forms lab) using external CSS. The following should be implemented: 
+- Change the background color of the form. 
+- Add padding and margins to form fields. 
+- Style the submit button with a hover effect. 
+- Use class selectors for styling common elements and ID selectors for unique 
+elements. </pre>
+    
+    <form action="">
+        <div class="form-grp">
+            <label for="name">Full Name: </label>
+            <input type="text" name="" id="name" minlength="5" maxlength="10" required>
+        </div>
+        <div class="form-grp">
+            <label for="email">Email: </label>
+            <input type="email" name="" id="email" required>
+        </div>
+        <div class="form-grp">
+            <label for="number">Phone Number: </label>
+            <input type="number" name="" id="number" required pattern="[0-9]{10}">
+        </div>
+        <div class="form-grp">
+            <label for="subject">Subject: </label>
+            <select name="" id="subject">
+                <option value="">Select Subject</option>
+                <option value="">Math</option>
+                <option value="">English</option>
+                <option value="">Economics</option>
+                <option value="">Science</option>
+            </select>
+        </div>
+        <div class="form-grp">
+            <label for="message">Message: </label>
+            <textarea name="" id="message" cols="30" rows="2"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+
+    </form>
+
+    </div>
+
+    <hr>
+
+    <div class="box2">
+
+        <h3> CSS Box Model :</h3>
+        <pre>Task: Create a profile card layout using the box model. The profile card should include: 
+- A profile picture.
+- The user’s name and bio. 
+- A button to "Follow" the user.</pre>
+
+            <div class="card">
+                <div class="profile"></div>
+                <h3>[---Name---]</h3>
+                <p class="bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam illo ex, ipsam deserunt aperiam repellendus iste incidunt numquam amet quas eius est magni nesciunt minus, explicabo exercitationem reiciendis odio ducimus veniam eaque voluptatum nihil! Rerum qui, fugiat exercitationem voluptatibus quasi voluptatum enim laboriosam ipsam necessitatibus!</p>
+                <button type="submit">Follow</button>
+            </div>
+    </div>
+
+    <hr>
+
+    <div class="box3">
+        <h3> CSS Flexbox :</h3>
+        <pre>Task: Create a simple webpage layout using Flexbox. The layout should include: 
+- A header. 
+- A sidebar on the left. 
+- A main content area in the center. 
+- A footer. </pre>
+            <header class="header">-- Header --</header>
+            <main class="main">
+                <aside class="aside">--Aside--</aside>
+                <section class="main-sec">--HeroSection--</section>
+            </main>
+            <footer class="footer">-- Footer --</footer>
+
+    </div>
+    <hr>
+
+    <div class="box4">
+        <h3> CSS Grid </h3>
+        <pre>Task: Create a 3x3 grid of product cards using CSS Grid. Each card should contain: 
+- A product image. 
+- A product title. 
+- A price. </pre>
+
+            <div class="container">
+                <div class="card1">
+                    <img src="../Assets/jacket.jpg" alt="">
+                    <h4 class="product-name">Jacket</h4>
+                    <p class="product-price">$2.08</p>
+                </div>
+                <div class="card1">
+                    <img src="../Assets/hoodie.jpg" alt="">
+                    <h4 class="product-name">Hoodie</h4>
+                    <p class="product-price">$1.90</p>
+                </div>
+                <div class="card1">
+                    <img src="../Assets/tshirt1.jpg" alt="">
+                    <h4 class="product-name">T-shirt</h4>
+                    <p class="product-price">$0.90</p>
+                </div>
+                <div class="card1">
+                    <img src="../Assets/shirt.jpg" alt="">
+                    <h4 class="product-name">Shirt</h4>
+                    <p class="product-price">$1.25</p>
+                </div>
+                <div class="card1">
+                    <img src="../Assets/img1.webp" alt="">
+                    <h4 class="product-name">Headphones</h4>
+                    <p class="product-price">$2.45</p>
+                </div>
+                <div class="card1">
+                    <img src="../Assets/img2.jpg" alt="">
+                    <h4 class="product-name">Earbuds</h4>
+                    <p class="product-price">$2.99</p>
+                </div>
+                <div class="card1">
+                    <img src="../Assets/Backpack.jpg" alt="">
+                    <h4 class="product-name">Backpack</h4>
+                    <p class="product-price">$4.99</p>
+                </div>
+                <div class="card1">
+                    <img src="../Assets/Watch.jpg" alt="">
+                    <h4 class="product-name">Watch</h4>
+                    <p class="product-price">$3.09</p>
+                </div>
+                <div class="card1">
+                    <img src="../Assets/Watch2.jpg" alt="">
+                    <h4 class="product-name">Watch</h4>
+                    <p class="product-price">$3.09</p>
+                </div>
+            </div>
+    </div>
+
+    <div class="box5">
+        <h3> Responsive Web Design with Media Queries </h3>
+        <pre>Task: Build a responsive webpage that includes: 
+- A navigation bar. 
+- A content section with two columns. 
+- A footer. </pre>
+
+        <header class="hdr">
+            <nav class="nav">
+                <h1>Website!</h1>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Work</a>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="sec1">
+                <h2 class="sub-heading">Heading1</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquam nam commodi eius libero dicta, cum quos, quisquam assumenda quidem vero illo perferendis deleniti et? Explicabo eveniet rerum natus iusto voluptas quis odit reprehenderit, cumque autem amet harum incidunt est sequi ipsum quos. Aliquid ea beatae cumque ipsa, iure maiores.</p>
+            </section>
+            <section class="sec1">
+                <h2 class="sub-heading">Heading2</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquam nam commodi eius libero dicta, cum quos, quisquam assumenda quidem vero illo perferendis deleniti et? Explicabo eveniet rerum natus iusto voluptas quis odit reprehenderit, cumque autem amet harum incidunt est sequi ipsum quos. Aliquid ea beatae cumque ipsa, iure maiores.</p>
+            </section>
+        </main>
+        <footer class="foot">
+            Copyrights!
+        </footer>
+    </div>
+
+    <div class="box6">
+        <h3> Typography and Web Fonts</h3>
+        <pre>Task: Create a blog post layout with the following: 
+- A title, subtitle, and body content. 
+- Use at least two different fonts (one for headings, one for body content). 
+- Style the text to be responsive and easy to read. </pre>
+
+            <div class="blog-container">
+                <h1 class="blog-title">Web Development</h1>
+                <h4 class="sub-title">With Consisteny and Patience</h4>
+                <p class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque blanditiis voluptatum provident harum! Eius fugit aliquam ex cumque dolorem doloremque sint quibusdam, mollitia obcaecati aperiam id, facere officiis accusamus ipsam distinctio rerum debitis voluptate error et, porro dolores unde dicta esse. Corrupti earum obcaecati pariatur odio perferendis corporis qui culpa!</p>
+            </div>
+
+    </div>
+
+
+
+</bodcard
+</html>
